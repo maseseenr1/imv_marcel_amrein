@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    justify-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 10px 16px;
+    background: #009fe3;
+    color: #f1f1f1;
+    z-index: 1;
+    border-bottom: solid #cdcdcd 1px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 102px;
+    }

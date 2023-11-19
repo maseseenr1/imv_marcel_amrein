@@ -52,6 +52,17 @@ div {
     width: 40%;
 }
 
+.company_site_image{
+    height: 100px;
+    width: calc(100% * (1/2) - 10px - 1px);
+}
+
+.company_site_image img{
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+}
+
 .about_parent {
     display: flex;
     flex-direction: row;

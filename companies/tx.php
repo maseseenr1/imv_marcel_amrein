@@ -12,7 +12,7 @@
     <script src="../js/index.js"></script>
 </head>
     <body>
-            <?php include('../php/header.php'); ?>
+            <?php include('../phpTemplates/header.php'); ?>
         <div class="content">
             <div class="about_parent">
                 <div class="company_site_image">
@@ -29,6 +29,6 @@
             </div>
             <div class="divider"></div>
         </div>
-        <?php include('../php/footer.php'); ?>
-    </body>
+        <?php include('../phpTemplates/footer.php'); ?>
+    </body>phpTemplates
 </html>

@@ -19,9 +19,9 @@ div {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    padding: 16px;
+    align-items: center;
+    max-width: 100%;
+    column-gap: 20px;
 }
 
 .content_header {
@@ -40,6 +40,8 @@ div {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    max-width: 60%;
+    height: auto;
     padding: 0px 20px 20px 20px;
 }
 
@@ -63,15 +65,21 @@ div {
     max-height: 70%;
 }
 
+.about_info_text{
+
+}
+
 .about_parent {
     display: flex;
     flex-direction: row;
-    padding: 2.5% 5% 5% 100px;
+    justify-content: center;
+    width: 80%;
+    padding: 2.5% 0% 2.5% 0;
     z-index: 0;
 }
 
-#about_partent_b {
-    justify-content: flex-end;
+#about_partent_b div {
+    padding-left: 0;
 }
 
 .about_img {
@@ -98,9 +106,10 @@ div {
 
 .three_rows {
     display: flex;
-    font-size: 0;
     flex-wrap: wrap;
-    padding: 2.5% 5% 5% 100px;
+    padding: 1% 0 1% 0;
+    background: #009fe3;
+    width: 100%;
 }
 
 .three_rows_child {
@@ -112,13 +121,18 @@ div {
     width: calc(100% * (1/4) - 10px - 1px);
 }
 
-.three_rows_child img {
+.three_rows_child a {
     display: block;
     max-width: 70%;
     max-height: 70%;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
     transition: transform .2s;
 }
 
-.three_rows_child img:hover {
+.three_rows_child a:hover {
     transform: scale(1.2);
 }

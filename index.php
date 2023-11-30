@@ -12,7 +12,7 @@
     <script src="js/index.js"></script>
 </head>
     <body>
-            <?php include('php/header.php'); ?>
+            <?php include('phpTemplates/header.php'); ?>
         <div class="content">
             <div class="about_parent">
                 <div class="about_img">
@@ -34,10 +34,14 @@
             <div class="about_parent" id="about_partent_b">
                 <div class="about_info">
                     <div class="about_info_header">
-                        <h2>Haben die Medienhäusern eine Chance zu überleben mit den neuen Generationen? Gen Z, Gen Alpha</h2>
+                        <h2>
+                            Bachelorthesis
+                        </h2>
                     </div>
                     <div class="about_info_text">
-                        test
+                            Finde ich zu breit gestellt. Mein Vorschlag: Formuliere mal in die Richtung. Damit du die Fragestellung konkreter bearbeiten kannst:
+                            Sind Medienhäuser in Zeiten von KI für GenZ (und GenAlpha) als Orientierung und Lebenshilfe noch relevant? Wie (in welchen Bereichen, bei welchen Aufgaben)
+                            kann KI eine Neuausrichtung unterstützen? (Welche Best Practices gibt es bereits?)
                     </div>
                 </div>
                 <div class="about_img">
@@ -51,32 +55,32 @@
 
             <div class="three_rows">
                 <div class="three_rows_child">
-                    <a href="/companies/ringier.php">Ringier</a>
+                    <a href="companies/ringier.php">Ringier</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/tx.php">TX Group</a>
+                    <a href="companies/tx.php">TX Group</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/srg.php">SRG SSR</a>
+                    <a href="/ompanies/srg.php">SRG SSR</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/watson.php">Watson</a>
+                    <a href="companies/watson.php">Watson</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/az.php">AZ Medien</a>
+                    <a href="companies/az.php">AZ Medien</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/orell.php">Orell Füssli</a>
+                    <a href="companies/orell.php">Orell Füssli</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/nzz.php">NZZ</a>
+                    <a href="companies/nzz.php">NZZ</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/companies/highlight.php">Highlight Communications</a>
+                    <a href="companies/highlight.php">Highlight Communications</a>
                 </div>
 
             </div>
         </div>
-        <?php include('php/footer.php'); ?>
+        <?php include('phpTemplates/footer.php'); ?>
     </body>
 </html>

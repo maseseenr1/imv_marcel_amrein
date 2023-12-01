@@ -1,48 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // When the event DOMContentLoaded occurs, it is safe to access the DOM
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
 
-    // When the user scrolls the page, execute myFunction 
-    window.addEventListener('scroll', myFunctionForSticky);
-
-    // Get the navbar
-    var navbar = document.getElementById("header");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. 
-    // Remove "sticky" when you leave the scroll position
-
-    function myFunctionForSticky() {
-        if (window.pageYOffset >= sticky) {
-            console.log("window.pageYOffset >= sticky");
-        } else {
-            console.log("Not window.pageYOffset >= sticky");
-        }
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-
-    /*Toggle between adding and removing the "responsive" class to topnav
-    when the user clicks on the icon*/
-
-    function myFunctionForResponsive() {
-        navbar.classList.toggle('responsive');
-    }
-
-    //function pageLoaded() {
-    //    window.scrollBy({
-    //        top: 0,
-    //        behavior: "smooth",
-    //    });
-    //    console.log("scroll done");
-    //}
-    //if (window.addEventListener) {
-    //    window.addEventListener('load', pageLoaded, false); //W3C
-    //} else {
-    //    window.attachEvent('onload', pageLoaded); //IE
-    //}
-})
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "20px";
+    document.getElementById("logo").style.height = "40px";
+  } else {
+    document.getElementById("header").style.fontSize = "30px";
+    document.getElementById("logo").style.height = "90px";
+  }
+}

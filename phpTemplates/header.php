@@ -7,9 +7,7 @@
 </head>
     <body>
         <div class="header" id="header">
-                <div>
-                    Logo
-                </div>
+                <img src="img/ai_logo.png" alt="LOGO" id="logo"/>
                 <h2>IM V - Marcel Amrein</h2>
         </div>
     </body>

@@ -10,6 +10,17 @@
     color: #f1f1f1;
     z-index: 1;
     border-bottom: solid #cdcdcd 1px;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+.header img{
+    height: 90px;
+    width: auto;
+    margin: 24px 50px 0 25px;
+    transition: 0.2s;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */

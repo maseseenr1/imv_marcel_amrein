@@ -7,6 +7,7 @@ body {
     font-weight: lighter;
 }
 
+
 h2 {
     font-family: 'Rubik', sans-serif;
 }
@@ -141,10 +142,33 @@ div {
 
 .usecase_list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
 }
 /* Liste linksbündig */
 .usecase_list div {
-    justify-content: left;
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
 }
+
+.usecase_list .about_parent:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%; /* Position at a quarter to the right */
+    background-color: #dcdcdc; /* Light grey */
+    border: none;
+    padding: 20px; /* Make the button even larger */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 999; /* Ensure the button is on top of the content */
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #b0b0b0; /* A bit darker than light grey on hover */
+  }

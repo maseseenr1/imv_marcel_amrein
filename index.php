@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/header.js"></script>
-    <script src="js/index.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
     <body>
-            <?php include('phpTemplates/header.php'); ?>
+        <?php include('phpTemplates/header.php'); ?>
         <div class="content">
+        <?php include('phpTemplates/button.php'); ?>
             <div class="about_parent">
                 <div class="about_img">
                     <img src="img/portrait.jpg" alt="Portrait Marcel Amrein" />

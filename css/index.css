@@ -3,17 +3,17 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: lighter;
 }
 
 h2 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 div {
     display: flex;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .content {
@@ -67,7 +67,7 @@ div {
 }
 
 .about_info_text{
-
+    flex-direction: column;
 }
 
 .about_parent {
@@ -111,6 +111,7 @@ div {
     padding: 1% 0 1% 0;
     background: #009fe3;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .three_rows_child {
@@ -136,4 +137,14 @@ div {
 
 .three_rows_child a:hover {
     transform: scale(1.2);
+}
+
+.usecase_list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/* Liste linksbündig */
+.usecase_list div {
+    justify-content: left;
 }

@@ -5,7 +5,7 @@
     <title>Bachelorthesis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -82,16 +82,14 @@
 
             </div>
             <div class="content_header">
-                <h2>Anwendungen für KI</h2>
+                <h2>10 Anwendemöglichkeiten für KI in Medienunternehmen.</h2>
             </div>
-            <div class="about_parent">
-                <div class="about_info_text">
-                            Finde ich zu breit gestellt. Mein Vorschlag: Formuliere mal in die Richtung. Damit du die Fragestellung konkreter bearbeiten kannst:
-                            Sind Medienhäuser in Zeiten von KI für GenZ (und GenAlpha) als Orientierung und Lebenshilfe noch relevant? Wie (in welchen Bereichen, bei welchen Aufgaben)
-                            kann KI eine Neuausrichtung unterstützen? (Welche Best Practices gibt es bereits?)
-                </div>
-            </div>
+        <!-- Use Cases -->
+        <div class="usecase_list">
+            <?php include('phpTemplates/aiUsecases.php'); ?>
         </div>
+        </div>
+        <!-- Footer -->
         <?php include('phpTemplates/footer.php'); ?>
     </body>
 </html>

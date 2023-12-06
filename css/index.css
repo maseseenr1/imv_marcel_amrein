@@ -225,3 +225,29 @@ body.overlay-open .content.show {
     visibility: visible;
     opacity: 1;
 }
+
+.back-button {
+    display: inline-block;
+    padding: 37px 20px 10px 20px; /* top-right-bottom-left */
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #FFAD84;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    left: 20px; /* Adjust the left distance as needed */
+    top: 0;
+}
+
+.back-button:hover {
+    background-color: #FF8B5F;
+}
+
+#impressum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 2.5% 0% 2.5% 0;
+}

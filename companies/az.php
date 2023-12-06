@@ -14,8 +14,11 @@
     <script src="../js/index.js"></script>
 </head>
     <body>
-            <?php include('../phpTemplates/header.php'); ?>
+        <!-- header -->
+        <?php include('../phpTemplates/header.php'); ?>
+        <!-- inhalt -->
         <div class="content">
+            <a href="/" class="back-button">Zurück</a>
             <div class="about_parent">
                 <div class="company_site_image">
                     <a href="https://www.azmedien.ch/" target="_blank"><img src="../img/azmedien.png" alt="AZ Medien AG Logo" /></a>
@@ -34,6 +37,7 @@
                 </div>
             </div>
         </div>
+        <!-- footer -->
         <?php include('../phpTemplates/footer.php'); ?>
     </body>
 </html>

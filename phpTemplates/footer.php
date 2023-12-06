@@ -1,7 +1,9 @@
+<?php
+// Basepath indexlink
+$impressumBasepath = '/'
+?>
     <footer>
-        <a href="#">Impressum</a>
-        <a href="#">Companies</a>
-        <a href="#">Scroll to top</a>
+        <a href="<?php echo $impressumBasepath; ?>impressum.php">Impressum</a>
     </footer>
 
             

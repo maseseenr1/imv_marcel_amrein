@@ -14,8 +14,11 @@
     <script src="../js/index.js"></script>
 </head>
     <body>
-            <?php include('../phpTemplates/header.php'); ?>
+        <!-- header -->
+        <?php include('../phpTemplates/header.php'); ?>
+        <!-- inhalt -->
         <div class="content">
+            <a href="/" class="back-button">Zurück</a>
             <div class="about_parent">
                 <div class="company_site_image">
                     <a href="https://www.highlight-communications.ch/" target="_blank"><img src="../img/highlight.jpeg" alt="Highlight Communications AG Logo" /></a>
@@ -33,8 +36,8 @@
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
         </div>
+        <!-- footer -->
         <?php include('../phpTemplates/footer.php'); ?>
     </body>
 </html>

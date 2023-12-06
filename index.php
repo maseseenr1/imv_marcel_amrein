@@ -11,14 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/overlay.css">
-
 </head>
     <body>
             <!-- overlay -->
         <?php include('overlay.php'); ?> 
             <!-- header -->
         <?php include('phpTemplates/header.php'); ?>
-            <!-- content -->
+            <!-- inhalt -->
         <div class="content">
             <!-- Button -->
         <?php include('phpTemplates/button.php'); ?>

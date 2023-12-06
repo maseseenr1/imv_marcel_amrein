@@ -14,8 +14,11 @@
     <script src="../js/index.js"></script>
 </head>
     <body>
-            <?php include('../phpTemplates/header.php'); ?>
+        <!-- header -->
+        <?php include('../phpTemplates/header.php'); ?>
+        <!-- inhalt -->
         <div class="content">
+            <a href="/" class="back-button">Zurück</a>
             <div class="about_parent">
                 <div class="company_site_image">
                     <a href="https://www.orellfuessli.com/medien" target="_blank"><img src="../img/orell.png" alt="Orell Füssli Logo" /></a>
@@ -34,8 +37,8 @@
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
         </div>
+        <!-- footer -->
         <?php include('../phpTemplates/footer.php'); ?>
     </body>
 </html>

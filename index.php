@@ -8,13 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/header.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+
 </head>
     <body>
-            <?php include('phpTemplates/header.php'); ?>
+            <!-- overlay -->
+        <?php include('overlay.php'); ?> 
+            <!-- header -->
+        <?php include('phpTemplates/header.php'); ?>
+            <!-- content -->
         <div class="content">
+            <!-- Button -->
+        <?php include('phpTemplates/button.php'); ?>
             <div class="about_parent">
                 <div class="about_img">
                     <img src="img/portrait.jpg" alt="Portrait Marcel Amrein" />
@@ -32,7 +39,7 @@
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="about_parent" id="about_partent_b">
+            <div class="about_parent" id="about_parent_b">
                 <div class="about_info">
                     <div class="about_info_header">
                         <h2>
@@ -56,13 +63,13 @@
 
             <div class="three_rows">
                 <div class="three_rows_child">
-                    <a href="companies/ringier.php">Ringier</a>
+                    <a href="companies/ringier.php?route=../img/ai_logo.png">Ringier</a>
                 </div>
                 <div class="three_rows_child">
                     <a href="companies/tx.php">TX Group</a>
                 </div>
                 <div class="three_rows_child">
-                    <a href="/ompanies/srg.php">SRG SSR</a>
+                    <a href="companies/srg.php">SRG SSR</a>
                 </div>
                 <div class="three_rows_child">
                     <a href="companies/watson.php">Watson</a>
@@ -82,14 +89,18 @@
 
             </div>
             <div class="content_header">
-                <h2>10 Anwendemöglichkeiten für KI in Medienunternehmen.</h2>
+                <h2>10 Anwendemöglichkeiten für KI in Medienunternehmen (Quelle: ChatGPT):</h2>
             </div>
-        <!-- Use Cases -->
+            <!-- use cases -->
         <div class="usecase_list">
             <?php include('phpTemplates/aiUsecases.php'); ?>
         </div>
         </div>
-        <!-- Footer -->
+            <!-- footer -->
         <?php include('phpTemplates/footer.php'); ?>
+            <!-- scripts -->
+        <script src="js/header.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/overlay.js"></script>
     </body>
 </html>

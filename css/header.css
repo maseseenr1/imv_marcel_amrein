@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
     margin: 0;
     padding: 10px 16px;
-    background: #009fe3;
+    background: #FFAD84;
     color: #f1f1f1;
     z-index: 1;
     border-bottom: solid #cdcdcd 1px;
@@ -34,3 +34,8 @@
     .sticky + .content {
         padding-top: 102px;
     }
+
+.header a {
+    text-decoration: none;
+    color: white;
+}

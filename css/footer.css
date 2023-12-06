@@ -1,0 +1,14 @@
+footer {
+    background-color: #FFAD84;
+    color: white;
+    padding: 20px;
+    text-align: start;
+    position: sticky;
+    bottom: 0;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }

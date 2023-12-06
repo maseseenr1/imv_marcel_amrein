@@ -5,6 +5,8 @@ body {
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
     font-weight: lighter;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -23,13 +25,35 @@ div {
     max-width: 100%;
     column-gap: 20px;
     margin-top: 130px;
+    opacity: 0;
+    transform: translateX(-100%);
+    /* Start position off the left side */
+    animation: flyIn 1s ease-in-out forwards;
+}
+
+.content.show {
+    opacity: 1;
+    transform: translateX(0);
+    animation: none; /* Reset animation when the overlay is closed */
+}
+
+.content.fly-in {
+    animation: flyIn 1s ease-in-out forwards;
 }
 
 .content_header {
     padding: 0px 5% 2.5% 100px;
 }
 
-.divider{
+@keyframes flyIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* End position at the center */
+    }
+}
+
+.divider {
     border-bottom: 2px solid rgb(200, 200, 200);
     width: 80%;
     height: 1px;
@@ -55,18 +79,22 @@ div {
     width: 40%;
 }
 
-.company_site_image{
+.company_site_image {
     height: 100px;
     width: calc(100% * (1/2) - 10px - 1px);
 }
 
-.company_site_image img{
-    display: block;
-    max-width: 70%;
-    max-height: 70%;
+.company_site_image a {
+    height: 100%;
+    width: auto;
 }
 
-.about_info_text{
+.company_site_image a img {
+    display: block;
+    height: 100%;
+}
+
+.about_info_text {
     flex-direction: column;
 }
 
@@ -79,7 +107,7 @@ div {
     z-index: 0;
 }
 
-#about_partent_b div {
+#about_parent_b div {
     padding-left: 0;
 }
 
@@ -97,19 +125,19 @@ div {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    transition: transform .5s;
+    transition: transform 0.5s;
     z-index: inherit;
 }
 
 .about_img img:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .three_rows {
     display: flex;
     flex-wrap: wrap;
     padding: 1% 0 1% 0;
-    background: #009fe3;
+    background: #ffad84;
     width: 100%;
     margin-bottom: 100px;
 }
@@ -132,7 +160,7 @@ div {
     text-align: center;
     color: white;
     text-decoration: none;
-    transition: transform .2s;
+    transition: transform 0.2s;
 }
 
 .three_rows_child a:hover {
@@ -141,10 +169,59 @@ div {
 
 .usecase_list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
 }
 /* Liste linksbündig */
 .usecase_list div {
-    justify-content: left;
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.usecase_list .about_parent:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    background-color: #fdf7e4;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 10%;
+    /* Position at a quarter to the right */
+    background-color: #dcdcdc;
+    /* Light grey */
+    border: none;
+    padding: 20px;
+    /* Make the button even larger */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+    /* Ensure the button is on top of the content */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #b0b0b0;
+    /* A bit darker than light grey on hover */
+}
+
+
+/* Additional styles to prevent interactions with elements underneath */
+body.overlay-open .content {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Additional styles to enable interactions with elements inside the overlay */
+body.overlay-open .content * {
+    pointer-events: auto;
+}
+
+body.overlay-open .content.show {
+    visibility: visible;
+    opacity: 1;
 }

@@ -1,0 +1,40 @@
+#titleOverlay {
+    /* Other styles for your overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and transparency as needed */
+    color: white;
+    z-index: 9999; /* Set a high z-index to ensure it appears on top */
+    display: none; /* Hidden by default */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+#titleOverlay.show {
+    display: flex; /* Show the overlay when the 'show' class is added */
+}
+
+/* Add the following styles if you want to prevent interactions with elements underneath */
+#titleOverlay.show::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change the cursor style to indicate non-interactivity */
+    z-index: 9998; /* Set a z-index lower than the overlay */
+}
+
+/* Additional styles to prevent interactions with elements underneath */
+#titleOverlay.show + * {
+    pointer-events: none;
+}
+
+/* Additional styles to enable interactions with elements inside the overlay */
+#titleOverlay.show * {
+    pointer-events: auto;
+}

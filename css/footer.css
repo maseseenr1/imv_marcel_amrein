@@ -1,8 +1,10 @@
 footer {
-    background-color: #009fe3;
+    background-color: #FFAD84;
     color: white;
     padding: 20px;
     text-align: start;
+    position: sticky;
+    bottom: 0;
   }
 
   footer a {

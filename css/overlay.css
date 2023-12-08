@@ -1,23 +1,21 @@
 #titleOverlay {
-    /* Other styles for your overlay */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and transparency as needed */
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    z-index: 9999; /* Set a high z-index to ensure it appears on top */
-    display: none; /* Hidden by default */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #titleOverlay.show {
-    display: flex; /* Show the overlay when the 'show' class is added */
+    display: flex;
 }
 
-/* Add the following styles if you want to prevent interactions with elements underneath */
 #titleOverlay.show::before {
     content: '';
     position: fixed;
@@ -25,16 +23,32 @@
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer; /* Change the cursor style to indicate non-interactivity */
-    z-index: 9998; /* Set a z-index lower than the overlay */
+    cursor: pointer;
+    z-index: 9998;
 }
 
-/* Additional styles to prevent interactions with elements underneath */
 #titleOverlay.show + * {
     pointer-events: none;
 }
 
-/* Additional styles to enable interactions with elements inside the overlay */
 #titleOverlay.show * {
     pointer-events: auto;
+}
+
+/* Neue Styles für die Responsivität */
+#titleOverlay > div {
+    max-width: 80%; /* Begrenzt die Breite des Inhalts im Overlay */
+    text-align: center; /* Zentriert den Text im Overlay */
+}
+
+#titleOverlay img {
+    max-width: 100%; /* Stellt sicher, dass das Bild nicht breiter als sein Container wird */
+    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
